@@ -144,5 +144,6 @@ setPauseButton.addEventListener("click", () => {
 window.addEventListener("load", () => {
     document.getElementById("modeTimer").style.background = "rgba(0, 0, 0, .2)";
     updateDisplays(wtime.seconds);
+    time_type = "pause";
 })
 
