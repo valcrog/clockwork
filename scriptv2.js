@@ -17,7 +17,7 @@ let time_type = "work";
 
 const startTimer = () => {
     running = true;
-
+    document.getElementById("start").removeEventListener("click", startTimer)
     timerId = setInterval(function() {
         // WORKING.
         if (time_type === "work") {
@@ -99,7 +99,7 @@ document.addEventListener("keydown", (e) => {
     };
 });
 
-document.getElementById("start").addEventListener("click", () => startTimer());
+document.getElementById("start").addEventListener("click", startTimer);
 document.getElementById("reset").addEventListener("click", () => location.reload(true));
 
 function resetTimers() {
