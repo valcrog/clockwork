@@ -65,11 +65,19 @@ body {
 }
 
 button#start {
-    background: rgba(0, 255, 0, .3);
+    background: rgb(34, 157, 133);
 }
 
 button#reset {
-    background: rgba(255, 0, 0, .5);
+    background: rgb(138, 39, 83);
+}
+
+button#start:hover {
+    background: rgb(30, 129, 109);
+}
+
+button#reset:hover {
+    background: rgb(122, 34, 72);
 }
 
 button#modeTimer {
