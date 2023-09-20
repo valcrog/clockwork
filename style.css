@@ -27,6 +27,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    gap: 3px;
 }
 
   
@@ -43,8 +44,6 @@ body {
     font-size: 2rem;
     text-transform: uppercase;
     background: rgba(0,0,0,0.1);
-    border-bottom: 3px solid rgba(0,0,0,0.2);
-    border-right: 1px solid rgba(0,0,0,0.2);
     padding: 1rem;
     font-family: 'Inconsolata', monospace;
 }
