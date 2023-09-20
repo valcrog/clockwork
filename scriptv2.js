@@ -17,7 +17,7 @@ let time_type = "work";
 
 const startTimer = () => {
     running = true;
-    document.getElementById("start").removeEventListener("click", startTimer)
+    document.getElementById("start").removeEventListener("click", startTimer);
     timerId = setInterval(function() {
         // WORKING.
         if (time_type === "work") {
@@ -47,10 +47,10 @@ const startTimer = () => {
 
 function timeOut() {
     if (time_type == "pause") {
-        document.querySelector("html").style.background = "linear-gradient(45deg,  #f54242 0%,#d14747 50%,#a10d0d 100%);";
+        document.getElementsByClassName("timer")[0].style.background = "linear-gradient(45deg,  #f54242 0%,#d14747 50%,#a10d0d 100%)";
         timerDisplay.textContent = "Perdu grosse merde";
     } else {
-        document.querySelector("html").style.background = "linear-gradient(45deg,  #42f57b 0%,#47d157 50%,#0da119 100%);";
+        document.getElementsByClassName("timer")[0].style.background = "linear-gradient(45deg,  #42f57b 0%,#47d157 50%,#0da119 100%)";
         timerDisplay.textContent = "Bravo champion";
     }
 }
