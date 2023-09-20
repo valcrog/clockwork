@@ -130,6 +130,9 @@ button#reset:hover {
 
 .timer__forms input {
     width: 20vw;
+    font-size: 24px;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
 }
 .timer__forms button {
     width: 5vw;
