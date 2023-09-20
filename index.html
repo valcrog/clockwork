@@ -9,15 +9,30 @@
 </head>
 <body>
     <div class="timer">
+        <div class="timer__mode">
+            <button class="timer__button" id="modeTimer">Timer</button>
+            <button class="timer__button" id="modeChrono">Chrono</button>
+        </div>
         <div class="timer__controls">
-            <form name="customForm" id="custom">
-                <input type="text" name="minutes" placeholder="Enter Minutes" />
-                <button>START</button>
-            </form>
+            <div class="timer__forms">
+                <div id="customWork">
+                    <input type="text" name="minutes" placeholder="Temps de travail" />
+                    <button class="set">SET</button>
+                </div>
+                <div id="customPause">
+                    <input type="text" name="minutes" placeholder="Temps de pause" />
+                    <button class="set">SET</button>
+                </div>
+            </div>
+            <div class="timer__buttons">
+                <button id="start">START</button>
+                <button id="reset">RESET</button>
+            </div>
         </div>
         <div class="display">
-            <h1 class="display__time-left"></h1>
-            <p class="display__end-time"></p>
+            <p class="display__type-time">📖 Travail 📖</p>
+            <h1 class="display__time-left">04:53</h1>
+            <p class="display__end-time">Il te reste 1:07 de pause.</p>
         </div>
     </div>
 
