@@ -53,13 +53,13 @@ body {
     outline: 0;
 }
 
-.display__end-time, .display__type-time {
+.display__end-time, .display__time-type {
     font-size: 4rem;
     color: white;
     line-height: 0px;
 }
 
-.display__type-time {
+.display__time-type {
     text-transform: uppercase;
 }
 
