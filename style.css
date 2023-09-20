@@ -48,7 +48,7 @@ body {
     font-family: 'Inconsolata', monospace;
 }
 
-.timer__controls button:hover {
+.timer__controls button:hover, .timer__mode button:hover {
     background: rgba(0,0,0,0.2);
     outline: 0;
 }
@@ -77,10 +77,6 @@ button#start:hover {
 
 button#reset:hover {
     background: rgb(122, 34, 72);
-}
-
-button#modeTimer {
-    background: rgba(0, 0, 0, .2);
 }
 
 .timer__mode {
